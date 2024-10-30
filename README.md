@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Norebase Frontend Developer Test
+
+This project is a simple web application that displays information on cryptocurrency coin prices using the [CoinLore API](https://docs.coinlore.com/#/). The application fetches a list of coin prices from the `/tickers` endpoint and displays them in a paginated table.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js**: Ensure you have [Node.js](https://nodejs.org) installed. You can check by running:
+  ```bash
+  node -v
+  ```
+
+### Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+### Install Dependencies
+
+Navigate to the project directory and install the necessary dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the Development Server
+
+Start the development server with:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application. The page will auto-update as you edit the files.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Fetching Data**: The app fetches cryptocurrency data from the CoinLore API using the `/tickers` endpoint.
+2. **Displaying Data**: The coins are displayed in a table format.
+3. **Pagination**: The table is paginated, displaying 10 items per page. Users can navigate through pages using the "Previous" and "Next" buttons.
+
+### Editing the Project
+
+You can start editing the main page by modifying `app/page.tsx`. Any changes made will reflect in the browser automatically.
+
+## Requirements
+
+- The application meets the following requirements:
+  - Fetches data from the CoinLore API.
+  - Displays coin prices in a table.
+  - Implements pagination with 10 items per page.
+  - Follows UI and UX considerations as outlined in the challenge.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js and the CoinLore API, you can refer to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [CoinLore API Documentation](https://docs.coinlore.com/#/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy on GitHub Pages
 
-## Deploy on Vercel
+To deploy your application, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Build the application:
+   ```bash
+   npm run build
+   ```
+2. Deploy it to [GitHub Pages](https://pages.github.com/) or another hosting platform of your choice.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure to submit links to both your public repository and the deployed web page.
