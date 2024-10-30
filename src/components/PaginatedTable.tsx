@@ -51,6 +51,7 @@ export default function PaginatedTable() {
   const itemsPerPage = 10;
   const isMobile = useMediaQuery("(max-width:600px)");
 
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const { coins, fetchCoins } = useCryptoStore((state: any) => state);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
